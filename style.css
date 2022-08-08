@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    background: cornflowerblue;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.wrapper{
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 100vh;
+    background: rgba( 74, 144, 226, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 60%;
+}
+
+.wrapper .title{
+    text-align: center;
+}
+.wrapper .title h1{
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: navy;
+}
+.wrapper .title .uil{
+    color: yellow;
+    font-size: 1em;
+}
+
+.wrapper .banner{
+    padding-top: 10px;
+}
+.wrapper .banner img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 100px;
+}
+.wrapper .banner p{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: navy;
+}
+
+
+.content-wheather .input{
+    padding-top: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content-wheather .input input{
+    width: 100%;
+	max-width: 320px;
+	padding: 10px 15px;
+	background-color: #fff;
+	outline: none;
+	border-radius: 50px;
+	border:none;
+	font-size: 1em;
+	border: 2px solid navy;
+}
+
+.content-wheather .box{
+    margin-top: 20px;
+    flex: 1 1 100%;
+	padding: 25px 25px 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+    color: #fff;
+    background: rgba( 144, 19, 254, 0.3 );
+    box-shadow: 0 8px 20px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+   -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    width: 50%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.location-city{
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+.location-date{
+	font-size: 1.8em;
+	font-weight: 300;
+}
+.temperature-temp{
+	font-size: 2.2em;
+	font-weight: bold;
+}
+span{
+	font-weight: 500;
+}
+.temperature-type{
+	font-size: 2em;
+	font-weight: 600;
+}
+.temperature-range{
+	margin-top: 10px;
+	font-size: 1.7em;
+	font-weight: bold;
+}
+
+
+@media (max-width:950px){
+    .wrapper{
+        padding-top: 37%;
+    }
+    .content-wheather .box{
+        height: auto;
+        padding-bottom: 30px;
+    }
+}
+
+
+
+@media (max-width:680px){
+    .content-wheather .box{
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+    }
+    .temperature-type{
+        font-size: auto;
+    }
+}
+
+
+@media (max-width:450px){
+    .wrapper .banner img{
+        width: 150px;
+        height: 80px;
+    }
+    .location-city{
+        font-size: 1.3em;
+    }
+    .location-date{
+        font-size: 1em;
+        font-weight: 200;
+    }
+    .temperature-temp{
+        font-size: 1.9em;
+    }
+    span{
+        font-weight: 300;
+    }
+}
